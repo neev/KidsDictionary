@@ -5,7 +5,12 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.WindowInsets;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import static com.neerajavimal.kidsdictionary.CustomView1.*;
 
 public class HomeActivity extends AppCompatActivity {
     
@@ -31,6 +36,9 @@ public class HomeActivity extends AppCompatActivity {
         }
     };
     
+    
+    
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +47,10 @@ public class HomeActivity extends AppCompatActivity {
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        
+        
     }
     
+    
+   
 }
